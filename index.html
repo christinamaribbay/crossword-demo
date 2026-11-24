@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Crossword</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="crossword-container">
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <div id="crossword-board" class="crossword-board" role="group" aria-label="Crossword Puzzle Grid" style="--cols: 8;">
+    
+    <!-- ROW 1 (Index 0): C O N T R A S T -->
+    <div class="cell-wrapper">
+      <span class="cell-number" aria-hidden="true">1</span>
+      <input type="text" class="cell-input" id="cell-0" maxlength="1" aria-label="Row 1, Column 1." data-across="1A" data-down="1D" data-row="0" data-col="0">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-1" maxlength="1" aria-label="Row 1, Column 2." data-across="1A" data-row="0" data-col="1">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-2" maxlength="1" aria-label="Row 1, Column 3." data-across="1A" data-row="0" data-col="2">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-3" maxlength="1" aria-label="Row 1, Column 4." data-across="1A" data-row="0" data-col="3">
+    </div>
+    <div class="cell-wrapper">
+      <span class="cell-number" aria-hidden="true">2</span>
+      <input type="text" class="cell-input" id="cell-4" maxlength="1" aria-label="Row 1, Column 5." data-across="1A" data-down="2D" data-row="0" data-col="4">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-5" maxlength="1" aria-label="Row 1, Column 6." data-across="1A" data-row="0" data-col="5">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-6" maxlength="1" aria-label="Row 1, Column 7." data-across="1A" data-row="0" data-col="6">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-7" maxlength="1" aria-label="Row 1, Column 8." data-across="1A" data-row="0" data-col="7">
+    </div>
+
+    <!-- ROW 2 (Index 1): A ■ ■ ■ O ■ ■ ■ -->
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-8" maxlength="1" aria-label="Row 2, Column 1." data-down="1D" data-row="1" data-col="0">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-12" maxlength="1" aria-label="Row 2, Column 5." data-down="2D" data-row="1" data-col="4">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+
+    <!-- ROW 3 (Index 2): P ■ ■ ■ B ■ ■ ■ -->
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-16" maxlength="1" aria-label="Row 3, Column 1." data-down="1D" data-row="2" data-col="0">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-20" maxlength="1" aria-label="Row 3, Column 5." data-down="2D" data-row="2" data-col="4">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+
+    <!-- ROW 4 (Index 3): T ■ ■ A U D I T -->
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-24" maxlength="1" aria-label="Row 4, Column 1." data-down="1D" data-row="3" data-col="0">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <span class="cell-number" aria-hidden="true">3</span>
+      <input type="text" class="cell-input" id="cell-27" maxlength="1" aria-label="Row 4, Column 4." data-across="3A" data-row="3" data-col="3">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-28" maxlength="1" aria-label="Row 4, Column 5." data-across="3A" data-down="2D" data-row="3" data-col="4">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-29" maxlength="1" aria-label="Row 4, Column 6." data-across="3A" data-row="3" data-col="5">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-30" maxlength="1" aria-label="Row 4, Column 7." data-across="3A" data-row="3" data-col="6">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-31" maxlength="1" aria-label="Row 4, Column 8." data-across="3A" data-row="3" data-col="7">
+    </div>
+
+    <!-- ROW 5 (Index 4): I ■ ■ ■ S ■ ■ ■ -->
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-32" maxlength="1" aria-label="Row 5, Column 1." data-down="1D" data-row="4" data-col="0">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-36" maxlength="1" aria-label="Row 5, Column 5." data-down="2D" data-row="4" data-col="4">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+
+    <!-- ROW 6 (Index 5): O ■ ■ ■ T A B ■ -->
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-40" maxlength="1" aria-label="Row 6, Column 1." data-down="1D" data-row="5" data-col="0">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <span class="cell-number" aria-hidden="true">4</span>
+      <input type="text" class="cell-input" id="cell-44" maxlength="1" aria-label="Row 6, Column 5." data-across="4A" data-down="2D" data-row="5" data-col="4">
+    </div>
+    <div class="cell-wrapper">
+      <span class="cell-number" aria-hidden="true">5</span>
+      <input type="text" class="cell-input" id="cell-45" maxlength="1" aria-label="Row 6, Column 6." data-across="4A" data-down="5D" data-row="5" data-col="5">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-46" maxlength="1" aria-label="Row 6, Column 7." data-across="4A" data-row="5" data-col="6">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+
+    <!-- ROW 7 (Index 6): N V D A ■ D ■ ■ -->
+    <div class="cell-wrapper">
+      <span class="cell-number" aria-hidden="true">6</span>
+      <input type="text" class="cell-input" id="cell-48" maxlength="1" aria-label="Row 7, Column 1." data-across="6A" data-down="1D" data-row="6" data-col="0">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-49" maxlength="1" aria-label="Row 7, Column 2." data-across="6A" data-row="6" data-col="1">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-50" maxlength="1" aria-label="Row 7, Column 3." data-across="6A" data-row="6" data-col="2">
+    </div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-51" maxlength="1" aria-label="Row 7, Column 4." data-across="6A" data-row="6" data-col="3">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-53" maxlength="1" aria-label="Row 7, Column 6." data-down="5D" data-row="6" data-col="5">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+
+    <!-- ROW 8 (Index 7): S ■ ■ ■ ■ A ■ ■ -->
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-56" maxlength="1" aria-label="Row 8, Column 1." data-down="1D" data-row="7" data-col="0">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper">
+      <input type="text" class="cell-input" id="cell-61" maxlength="1" aria-label="Row 8, Column 6." data-down="5D" data-row="7" data-col="5">
+    </div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+    <div class="cell-wrapper black-square" aria-hidden="true"></div>
+
+  </div>
+
+  <section class="clues-container">
+    <div class="clues-list">
+      <h2>Across</h2>
+      <ol id="clues-across">
+        <li id="clue-1A">
+          <button type="button" aria-pressed="false">
+            <strong>1.</strong> Check color
+          </button>
+        </li>
+        <li id="clue-3A">
+          <button type="button" aria-pressed="false">
+            <strong>3.</strong> Systematic review of a website or document for WCAG compliance
+          </button>
+        </li>
+        <li id="clue-4A">
+          <button type="button" aria-pressed="false">
+            <strong>4.</strong> Next interactive item using a keyboard
+          </button>
+        </li>
+        <li id="clue-6A">
+          <button type="button" aria-pressed="false">
+            <strong>6.</strong> Free, open-source screen reader for Windows
+          </button>
+        </li>
+      </ol>
+    </div>
+
+    <div class="clues-list">
+      <h2>Down</h2>
+      <ol id="clues-down">
+        <li id="clue-1D">
+          <button type="button" aria-pressed="false">
+            <strong>1.</strong> Synchronized text overlays for video dialogue and sound effects
+          </button>
+        </li>
+        <li id="clue-2D">
+          <button type="button" aria-pressed="false">
+            <strong>2.</strong> WCAG principle ensuring content works reliably across current and future assistive tech
+          </button>
+        </li>
+        <li id="clue-5D">
+          <button type="button" aria-pressed="false">
+            <strong>5.</strong> U.S. civil rights law prohibiting discrimination based on disability (abbr.)
+          </button>
+        </li>
+      </ol>
+    </div>
+    <button id="check-puzzle-btn" type="button">Check Puzzle</button>
+  </section>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
